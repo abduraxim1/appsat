@@ -1,7 +1,6 @@
 import 'package:flutter/material.dart';
 import 'package:flutter/cupertino.dart';
 import 'info.dart';
-import 'package:aaabbb/Homepage';
 
 void main() {
   runApp(MyApp());
@@ -38,6 +37,7 @@ class _HomePageState extends State<HomePage> {
   @override
   Widget build(BuildContext context) {
     return Scaffold(
+      appBar: AppBar(title: Text("salom"),),
         body: ListView.builder(
             itemCount: Info.name.length,
             itemBuilder: (context, index) {
